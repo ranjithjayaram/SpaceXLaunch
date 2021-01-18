@@ -11,8 +11,18 @@ export class ProgramsComponent implements OnInit {
   public launchedResults: any;
   ngOnInit(): void {
     this._appService.launches.subscribe(data => {
-      console.log(data);
-      this.launchedResults = data;
+     let  new_data:any= data.map((d: any) =>{
+        if(d['rocket']['first_stage']['cores']){
+          if(d['rocket']['first_stage']['cores'][0]['land_success'])
+          d['land_success']= d['rocket']['first_stage']['cores'][0]['land_success'];
+          else
+          d['land_success']= false;
+        }else{
+          d['land_success']= false;
+        }
+        return d;
+      })
+      this.launchedResults = new_data;
     })
   }
 

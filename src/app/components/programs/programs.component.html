@@ -4,7 +4,7 @@
             <div style="text-align: center;">
                 <img src={{launch.links.mission_patch_small}} style="width: 80%; background-color: #dedede; margin-top: 10px;" />
             </div>
-            <div style="padding-left: 10px;">
+            <div style="padding-left: 15px;">
                 <span>{{launch.mission_name}}#{{launch.flight_number}} </span>
                 <label>Mission Ids:</label>
                 <ul *ngFor="let missId of launch.mission_id">
@@ -16,7 +16,7 @@
                 
                 <label>Succesful Launch:<small>{{launch.launch_success}}</small></label>
                 
-                <label>Succesful Land: <small>{{launch.launch_landing}}</small></label>
+                <label>Succesful Land: <small>{{launch.land_success}}</small></label>
             </div>
             
            

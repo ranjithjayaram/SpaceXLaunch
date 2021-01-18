@@ -18,7 +18,6 @@ export class FiltersComponent implements OnInit {
   ngOnInit(): void {
     this._http.getAllLaunch().subscribe(data=>{
       this._appService.launches.next(data);
-      console.log(data);
     })
 
    
