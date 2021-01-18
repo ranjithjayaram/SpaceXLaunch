@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "SpaceXlaunch"
+  "defaultProject": "SpaceXlaunch",
+  "cli": {
+    "analytics": false
+  }
 }

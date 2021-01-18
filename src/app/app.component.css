@@ -1,0 +1,25 @@
+
+@media only screen and (max-width: 700px){
+    .app-layout{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .spacex-view{
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.app-layout{
+    display: flex;
+    background-color: #dedede;
+}
+header{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #dedede;
+    padding: 10px 20px
+    }
