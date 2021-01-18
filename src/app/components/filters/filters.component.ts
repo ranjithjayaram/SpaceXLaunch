@@ -46,8 +46,11 @@ export class FiltersComponent implements OnInit {
    * name
    */
   public selectedYear(year:any) {
-    this.toggleYear();
-    this.selectedYearFilter= year;
+    if(year === this.selectedYearFilter){
+      this.selectedYearFilter= undefined;
+    }else{
+      this.selectedYearFilter= year;
+    }
     this.getLaunchwithFilter();
   }
 
@@ -55,8 +58,12 @@ export class FiltersComponent implements OnInit {
    * selectedLaunch
    */
   public selectedLaunch(val:boolean) {
-    this.toggleLaunch();
-    this.selectedLaunchFilter= val;
+    if(val === this.selectedLaunchFilter){
+      this.selectedLaunchFilter= undefined;
+    }else{
+      this.selectedLaunchFilter= val;
+    }
+    
     this.getLaunchwithFilter();
   }
 
@@ -64,8 +71,12 @@ export class FiltersComponent implements OnInit {
    * name
    */
   public selectedLand(val:boolean) {
-    this.toggleLanding();
-    this.selectedLandFilter= val;
+    if(val === this.selectedLandFilter){
+      this.selectedLandFilter= undefined;
+    }else{
+      this.selectedLandFilter= val;
+    }
+    
     this.getLaunchwithFilter();
   }
 

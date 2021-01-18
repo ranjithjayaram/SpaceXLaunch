@@ -4,21 +4,21 @@
             Launch Year
         </div>
         <div *ngIf="yearFiltertoggle">
-            <button (click)="selectedYear(2006)" class="filterbtn">2006</button>
-            <button (click)="selectedYear(2007)" class="filterbtn">2007</button>
-            <button (click)="selectedYear(2008)" class="filterbtn">2008</button>
-            <button (click)="selectedYear(2009)" class="filterbtn">2009</button>
-            <button (click)="selectedYear(2010)" class="filterbtn">2010</button>
-            <button (click)="selectedYear(2011)" class="filterbtn">2011</button>
-            <button (click)="selectedYear(2012)" class="filterbtn">2012</button>
-            <button (click)="selectedYear(2013)" class="filterbtn">2013</button>
-            <button (click)="selectedYear(2014)" class="filterbtn">2014</button>
-            <button (click)="selectedYear(2015)" class="filterbtn">2015</button>
-            <button (click)="selectedYear(2016)" class="filterbtn">2016</button>
-            <button (click)="selectedYear(2017)" class="filterbtn">2017</button>
-            <button (click)="selectedYear(2018)" class="filterbtn">2018</button>
-            <button (click)="selectedYear(2019)" class="filterbtn">2019</button>
-            <button (click)="selectedYear(2020)" class="filterbtn">2020</button>
+            <button (click)="selectedYear(2006)" [ngClass]="{'selected': selectedYearFilter === 2006}" class="filterbtn" >2006</button>
+            <button (click)="selectedYear(2007)" [ngClass]="{'selected': selectedYearFilter === 2007}" class="filterbtn">2007</button>
+            <button (click)="selectedYear(2008)" [ngClass]="{'selected': selectedYearFilter === 2008}"class="filterbtn">2008</button>
+            <button (click)="selectedYear(2009)" [ngClass]="{'selected': selectedYearFilter === 2009}"class="filterbtn">2009</button>
+            <button (click)="selectedYear(2010)" [ngClass]="{'selected': selectedYearFilter === 2010}" class="filterbtn">2010</button>
+            <button (click)="selectedYear(2011)" [ngClass]="{'selected': selectedYearFilter === 2011}" class="filterbtn">2011</button>
+            <button (click)="selectedYear(2012)" [ngClass]="{'selected': selectedYearFilter === 2012}" class="filterbtn">2012</button>
+            <button (click)="selectedYear(2013)" [ngClass]="{'selected': selectedYearFilter === 2013}" class="filterbtn">2013</button>
+            <button (click)="selectedYear(2014)" [ngClass]="{'selected': selectedYearFilter === 2014}" class="filterbtn">2014</button>
+            <button (click)="selectedYear(2015)" [ngClass]="{'selected': selectedYearFilter === 2015}" class="filterbtn">2015</button>
+            <button (click)="selectedYear(2016)" [ngClass]="{'selected': selectedYearFilter === 2016}" class="filterbtn">2016</button>
+            <button (click)="selectedYear(2017)" [ngClass]="{'selected': selectedYearFilter === 2017}" class="filterbtn">2017</button>
+            <button (click)="selectedYear(2018)" [ngClass]="{'selected': selectedYearFilter === 2018}" class="filterbtn">2018</button>
+            <button (click)="selectedYear(2019)" [ngClass]="{'selected': selectedYearFilter === 2019}" class="filterbtn">2019</button>
+            <button (click)="selectedYear(2020)" [ngClass]="{'selected': selectedYearFilter === 2020}" class="filterbtn">2020</button>
 
 
         </div>
@@ -26,15 +26,15 @@
             Succesful Launch
         </div>
         <div *ngIf="launchFiltertoggle">
-            <button class="filterbtn" (click)="selectedLaunch(true)">True</button>
-            <button class="filterbtn" (click)="selectedLaunch(false)">False</button>
+            <button class="filterbtn" (click)="selectedLaunch(true)" [ngClass]="{'selected': selectedLaunchFilter === true}" >True</button>
+            <button class="filterbtn" (click)="selectedLaunch(false)" [ngClass]="{'selected': selectedLaunchFilter === false}" >False</button>
         </div>
         <div class="accordian" (click)="toggleLanding()">
             Succesful Landing
         </div>
         <div *ngIf="landingFiltertoggle">
-            <button class="filterbtn" (click)="selectedLand(true)">True</button>
-            <button class="filterbtn" (click)="selectedLand(false)">False</button>
+            <button class="filterbtn" (click)="selectedLand(true)" [ngClass]="{'selected': selectedLandFilter === true}" >True</button>
+            <button class="filterbtn" (click)="selectedLand(false)" [ngClass]="{'selected': selectedLandFilter === false}" >False</button>
         </div>
     </div>
 </div>

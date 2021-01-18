@@ -24,7 +24,10 @@
 .filterbtn:hover{
     background-color: rgb(0, 255, 0);
 }
-.filterbtn:focus{
+/* .filterbtn:focus{
+    background-color: rgb(0, 255, 0);
+} */
+.selected{
     background-color: rgb(0, 255, 0);
 }
 @media only screen and (max-width: 700px){
